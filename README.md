@@ -1,9 +1,9 @@
-https://medium.com/front-end-hacking/server-side-rendering-with-react-and-express-382591bfc77c
-Server side rendering example for react, redux, router simple application.
+h3 Server side rendering example for react, redux, router simple application.
 
-Installation
+h4 Installation
 
 npm install
 
-Running the Application
+h4 Running the Application
+
 npm run start
