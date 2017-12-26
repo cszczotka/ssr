@@ -1,0 +1,22 @@
+import React from 'react';
+import { Route, Link, Switch } from 'react-router-dom';
+import Home from './Home';
+import About from './About';
+
+const App = props => {
+  return (
+    <div>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+      </ul>
+      <hr />
+        <Switch>
+          <Route path="/about" component={About} />
+          <Route path="/" render={(routeProps) => <Home {...routeProps} {...props} />} />
+        </Switch>
+    </div>
+  );
+};
+
+export default App;
