@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 class Home extends React.Component {
   static propTypes = {
     initialText: PropTypes.string.isRequired,
-    changeText: PropTypes.func.isRequired
+    changeText: PropTypes.func.isRequired,
   };
 
   onButtonClick(event) {

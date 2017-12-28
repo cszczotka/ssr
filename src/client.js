@@ -27,10 +27,10 @@ const store = createStore(reducers, { ...window.MY_STATE });
   document.getElementById('app'));
 */
 
-ReactDOM.hydrate((
+ReactDOM.hydrate(
   <Provider store={store}>
     <BrowserRouter>
       <App {...window.MY_STATE} />
     </BrowserRouter>
-  </Provider>
-), document.getElementById('app'));
+  </Provider>, document.getElementById('app')
+);
